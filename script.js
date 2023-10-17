@@ -1,12 +1,11 @@
-
-
 function recibir() {
 
     let votaciones = document.getElementById("votaciones").value;
 
+    
     const miArreglo =["Alcaldia", "Gobernacion", "Consejo", "Asamblea", "Edil"];
 
-    
+    /*EL METODO CON SHIFT ELIMINA EL PRIMER VALOR Y DESPLAZA EL SEGUNDO VALOR HACIA EL PRIMERO*/
     let h1 = document.createElement("h1");
     let h1texto = document.createTextNode(miArreglo);
     h1.appendChild(h1texto);
@@ -15,7 +14,7 @@ function recibir() {
     miArreglo.shift()
 
   
-   
+   /*EL METOCO CON PUSH AGREGARA EL VALOR AL FINAL*/
     let lugar = document.getElementById("recibirDatos");
 
 
@@ -27,7 +26,7 @@ function recibir() {
 
     
 
-      
+      /*EL METODO UNSHIFT AGREGARA EL RESULTADO DE AL COMIENZO DE TODOS LO VALORES*/
     let zona = document.getElementById("recibirDatos");
 
 
@@ -37,7 +36,7 @@ function recibir() {
      document.getElementById("recibirDatos1").innerHTML = miArreglo;
     h3.appendChild(h3Vota);
 
-  
+  /*CON EL METODO LENGTH ES PARA VER LA LONGITUD DE LOS VALORES*/
     let puesto = miArreglo.length;
     document.getElementById("recibirDatos").innerHTML = puesto;
 
@@ -51,6 +50,6 @@ function recibir() {
     recibirDatos.appendChild(h1);
     recibirDatos.appendChild(h2);
     recibirDatos.appendChild(h3);
-    // recibirDatos1.appendChild(h3);
+    
 
 }
