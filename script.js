@@ -1,37 +1,56 @@
-function datos() {
-
-    let formulario = document.getElementById("formulario").value;
-    let nombre = document.getElementById("nombre").value;
 
 
+function recibir() {
 
-    let p1 = document.createElement("p");
-    let p1Texto = document.createTextNode(nombre);
-    p1.appendChild(p1Texto);
+    let votaciones = document.getElementById("votaciones").value;
 
+    const miArreglo =["Alcaldia", "Gobernacion", "Consejo", "Asamblea", "Edil"];
 
-    datos.appendChild(p1);
+    
+    let h1 = document.createElement("h1");
+    let h1texto = document.createTextNode(miArreglo);
+    h1.appendChild(h1texto);
 
+   
+    miArreglo.shift()
 
-    let miArreglo = ["Nombre"];
-    miArreglo.push("Pais").innerHTML
-    document.getElementById("ver");
-
-    miArreglo.unshift("Nacionalidad").innerHTML
-    document.getElementById("ver");
-
-    miArreglo.pop("Barrio").innerHTML
-    document.getElementById("ver");
-
-    miArreglo.shift("").innerHTML
-
-    miArreglo.length("ver").innerHTML
-    document.getElementById("ver");
-
-    document.getElementById("ver")
+  
+   
+    let lugar = document.getElementById("recibirDatos");
 
 
+    let h2 = document.createElement("h2");
+    let h2lugarVotaciones = document.createTextNode(miArreglo);
+    miArreglo.push("Presidente");
+    document.getElementById("recibirDatos1").innerHTML = miArreglo;
+    h2.appendChild(h2lugarVotaciones);
+
+    
+
+      
+    let zona = document.getElementById("recibirDatos");
 
 
+    let h3 = document.createElement("h3");
+    let h3Vota = document.createTextNode(miArreglo);
+    miArreglo.unshift("Camara");
+     document.getElementById("recibirDatos1").innerHTML = miArreglo;
+    h3.appendChild(h3Vota);
+
+  
+    let puesto = miArreglo.length;
+    document.getElementById("recibirDatos").innerHTML = puesto;
+
+
+ 
+
+  
+
+
+
+    recibirDatos.appendChild(h1);
+    recibirDatos.appendChild(h2);
+    recibirDatos.appendChild(h3);
+    // recibirDatos1.appendChild(h3);
 
 }
